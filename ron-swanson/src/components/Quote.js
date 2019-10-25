@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card, Icon, Image } from 'semantic-ui-react'
-import image from '../image/swanson'
+import { Card, Icon } from 'semantic-ui-react'
+
 const Quote = (props) => {
     return (
-        <Card color = 'olive'>
-             <Image src = {image} wrapped ui={false} />
+      
+        <Card fluid color = 'green'>
             <Card.Content>
                 <Card.Description>
                 "{props.quote}"
@@ -17,14 +17,21 @@ const Quote = (props) => {
                 </Card.Meta>
             </Card.Content>
             <Card.Content extra>
-                <a>
+                <a href = ''>
+                  <Icon name='like' />
+                  200
+                </a>
+                <div>
+                <a href = ''>
                   <Icon name='facebook' />
                 </a>
-                <a>
+                <a href = ''>
                   <Icon name='twitter' />
                 </a>
+                </div>
             </Card.Content>
         </Card>
+   
     )
 }
 
