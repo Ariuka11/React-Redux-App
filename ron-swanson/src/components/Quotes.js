@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import {fetchingData} from '../actions/action'
-
+import Quote from './Quote'
 const Quotes = (props) => {
 
     useEffect(() => {
@@ -10,14 +10,19 @@ const Quotes = (props) => {
     
     return (
         <div>
-            Quotes Here
+            {props.quotes.map(quote => {
+                return <Quote
+                    key = {quote}   
+                    quote = {quote}
+                />
+            })}
         </div>
     )
 }
 
 const mapStateToProps = (state) => {
     return {
-        
+        quotes : state.quotes
     }
 }
 

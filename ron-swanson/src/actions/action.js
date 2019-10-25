@@ -8,13 +8,14 @@ export const fetchingData = () => {
     return dispatch => {
         dispatch({type : FETCHING_DATA})
 
-        axios.get(`https://ron-swanson-quotes.herokuapp.com/v2/quotes`)
+          axios.get(`https://ron-swanson-quotes.herokuapp.com/v2/quotes/58`)
             .then(res => {
                 console.log(res)
-                dispatch({type : FETCHING_DATA_SUCCESFULL, payload : res.data.results})
+                dispatch({type : FETCHING_DATA_SUCCESFULL, payload : res.data})
             })
             .catch(err => {
                 dispatch({type : FETCHING_DATA_FAILED, payload: err})
             })
+        
     }
  }
