@@ -1,0 +1,48 @@
+#root{
+  background-image: radial-gradient( circle 621px at 25.3% 13.8%,  rgba(255,255,255,1) 0%, rgba(234,236,255,1) 90% );
+}
+.App {
+  text-align: center;
+ 
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.quote img{
+  margin-bottom: 1%;
+  border-radius: 10px;
+}
+.quote h1 {
+  margin-top: 1%;
+}
+.ui.two.cards {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.ui.card>.content>.description, .ui.cards>.card>.content>.description {
+  clear: both;
+  color: rgba(0,0,0,.68);
+  font-size: 20px;
+}
+.ui.cards>.card>.content>.header:not(.ui) {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-top: 0.78575em;
+  line-height: 1.28571429em;
+}
